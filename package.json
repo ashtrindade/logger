@@ -1,6 +1,6 @@
 {
   "name": "@ashtrindade/logger",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Node.js logger with dynamic log levels",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
