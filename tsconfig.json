@@ -14,8 +14,7 @@
       "paths": {
         "src/*": ["src/*"],
         "test/*": ["test/*"]
-      },
-      "sourceMap": true
+      }
   },
   "exclude": ["node_modules", "coverage"]
 }
