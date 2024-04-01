@@ -20,11 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:ashtrindade/logger.git"
   },
-  "author": "",
+  "author": "Ash Trindade",
   "license": "MIT",
-  "homepage": "",
+  "bugs": {
+    "url": "https://github.com/ashtrindade/logger/issues"
+  },
+  "homepage": "https://github.com/ashtrindade/logger#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
