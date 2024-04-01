@@ -27,7 +27,7 @@ To use the Logger package in your project, follow these steps:
   ```js
   /**
   @param {string} tag - use to help identify the source of the log message.
-  @param {string} message - message: message to be logged.
+  @param {string} message - data to be logged.
   */
 
   Log.d(tag: string, message: string); // Debug log
