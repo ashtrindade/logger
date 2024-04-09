@@ -1,11 +1,12 @@
 {
   "name": "@ashtrindade/logger",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Node.js logger with dynamic log levels",
   "main": "dist/index.js",
   "types": "index.d.ts",
   "files": [
-    "/dist"
+    "/dist",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "jest --verbose ./test",
@@ -29,6 +30,14 @@
     "url": "https://github.com/ashtrindade/logger/issues"
   },
   "homepage": "https://github.com/ashtrindade/logger#readme",
+  "keywords": [
+    "logger",
+    "log",
+    "logging",
+    "loglevel",
+    "tools",
+    "typescript"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
