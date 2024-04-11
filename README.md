@@ -1,7 +1,5 @@
 # Logger
 
-## Description
-
 This Logger package is a utility for logging messages in your application. It provides a simple and flexible way to record important events, errors, and debugging information.
 
 ## Usage
@@ -18,30 +16,30 @@ To use the Logger package in your project, follow these steps:
 
   ```js
   // CommonJS
-  const Log = require('@ashtrindade/logger');
+  const Log = require('@ashtrindade/logger')
 
   // ES6
-  import Log from '@ashtrindade/logger';
+  import Log from '@ashtrindade/logger'
   ```
 
   ```js
   /**
-  @param {string} tag - use to help identify the source of the log message.
-  @param {string} message - data to be logged.
+  @required {string} message - data to be logged.
+  @optional {string} tag - use to help identify the source of the log message.
   */
 
-  Log.d(tag: string, message: string); // Debug log
-  Log.i(tag: string, message: string); // Info log
-  Log.w(tag: string, message: string); // Warning log
-  Log.e(tag: string, message: string); // Error log
-  Log.v(tag: string, message: string); // Verbose log
+  Log.d(message: string, tag: string); // Debug log
+  Log.i(message: string, tag: string); // Info log
+  Log.w(message: string, tag: string); // Warning log
+  Log.e(message: string, tag: string); // Error log
+  Log.v(message: string, tag: string); // Verbose log
   ```
 
 ## Example
 
   ```ts
-  Log.d('MyTag', 'This is a debug message');
-  // Output: [<Timestamp> :: MyTag ::  D  => This is a debug message
+  Log.d('This is a debug message', 'MyTag');
+  // Output: [ YYYY-MM-DD HH:mm:ss GMT<offset> :: MyTag ::  D  => This is a debug message
   ```
 
-![Examples of logs with the format above](https://i.imgur.com/W95ho5W.png)
+![Examples of logs with the format above](https://i.imgur.com/xYkkhBj.png)
