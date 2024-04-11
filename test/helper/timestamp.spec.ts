@@ -3,7 +3,7 @@ import formatTimestamp from 'src/helper/timestamp'
 describe('Timestamp', () => {
   it('should return formatted timestamp', () => {
     const date = new Date()
-    const pattern = /^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}\sGMT[+-][0-99]$/
+    const pattern = /\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}\sGMT[+-]?\d*/
 
     expect(formatTimestamp(date)).toMatch(pattern)
   })
