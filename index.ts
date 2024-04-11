@@ -1,23 +1,23 @@
 import LogManager from './src/log/LogManager'
 
 export default class Log {
-  static readonly d = (tag: string, message: string) => {
-    return LogManager.debug(tag, message)
+  static readonly d = (message: string, tag: string = '') => {
+    return LogManager.debug(message, tag)
   }
 
-  static readonly i = (tag: string, message: string) => {
-    return LogManager.info(tag, message)
+  static readonly i = (message: string, tag: string = '') => {
+    return LogManager.info(message, tag)
   }
 
-  static readonly w = (tag: string, message: string) => {
-    LogManager.warn(tag, message)
+  static readonly w = (message: string, tag: string = '') => {
+    LogManager.warn(message, tag)
   }
 
-  static readonly e = (tag: string, message: string) => {
-    LogManager.error(tag, message)
+  static readonly e = (message: string, tag: string = '') => {
+    LogManager.error(message, tag)
   }
 
-  static readonly v = (tag: string, message: string) => {
-    LogManager.verbose(tag, message)
+  static readonly v = (message: string, tag: string = '') => {
+    LogManager.verbose(message, tag)
   }
 }

@@ -1,43 +1,70 @@
+import formatTimestamp from '../helper/timestamp'
 import colors from '../helper/colors'
 
 export default class LogManager {
-  static readonly debug = (tag: string, message: string): void => {
-    const timeStamp = new Date().toString()
+  message: string
+
+  constructor(message: string) {
+    this.message = message
+  }
+
+  static readonly debug = (message: string, tag: string = ''): void => {
+    const timestamp = formatTimestamp(new Date())
     const { cyan, base, green, whiteOnGreen } = colors
 
-    const logMessage = `${cyan}[ ${timeStamp} ] ${green}:: ${tag} :: ${whiteOnGreen} D ${base} => ${message}\n`
-    console.log(logMessage)
+    if (tag === '') {
+      message = `${cyan}[ ${timestamp} ] ${whiteOnGreen} D ${base} => ${message}\n`
+    } else {
+      message = `${cyan}[ ${timestamp} ] ${green}:: ${tag} :: ${whiteOnGreen} D ${base} => ${message}\n`
+    }
+    console.log(message)
   }
 
-  static readonly info = (tag: string, message: string): void => {
-    const timeStamp = new Date().toString()
+  static readonly info = (message: string, tag: string = ''): void => {
+    const timestamp = formatTimestamp(new Date())
     const { cyan, base, blue, whiteOnBlue } = colors
 
-    const logMessage = `${cyan}[ ${timeStamp} ] ${blue}:: ${tag} :: ${whiteOnBlue} I ${base} => ${message}\n`
-    console.log(logMessage)
+    if (tag === '') {
+      message = `${cyan}[ ${timestamp} ] ${whiteOnBlue} I ${base} => ${message}\n`
+    } else {
+      message = `${cyan}[ ${timestamp} ] ${blue}:: ${tag} :: ${whiteOnBlue} I ${base} => ${message}\n`
+    }
+    console.log(message)
   }
 
-  static readonly warn = (tag: string, message: string): void => {
-    const timeStamp = new Date().toString()
+  static readonly warn = (message: string, tag: string = ''): void => {
+    const timestamp = formatTimestamp(new Date())
     const { cyan, base, yellow, whiteOnYellow } = colors
 
-    const logMessage = `${cyan}[ ${timeStamp} ] ${yellow}:: ${tag} :: ${whiteOnYellow} W ${base} => ${message}\n`
-    console.log(logMessage)
+    if (tag === '') {
+      message = `${cyan}[ ${timestamp} ] ${whiteOnYellow} W ${base} => ${message}\n`
+    } else {
+      message = `${cyan}[ ${timestamp} ] ${yellow}:: ${tag} :: ${whiteOnYellow} W ${base} => ${message}\n`
+    }
+    console.log(message)
   }
 
-  static readonly error = (tag: string, message: string): void => {
-    const timeStamp = new Date().toString()
+  static readonly error = (message: string, tag: string = ''): void => {
+    const timestamp = formatTimestamp(new Date())
     const { cyan, base, red, whiteOnRed } = colors
 
-    const logMessage = `${cyan}[ ${timeStamp} ] ${red}:: ${tag} :: ${whiteOnRed} E ${base} => ${message}\n`
-    console.log(logMessage)
+    if (tag === '') {
+      message = `${cyan}[ ${timestamp} ] ${whiteOnRed} E ${base} => ${message}\n`
+    } else {
+      message = `${cyan}[ ${timestamp} ] ${red}:: ${tag} :: ${whiteOnRed} E ${base} => ${message}\n`
+    }
+    console.log(message)
   }
 
-  static readonly verbose = (tag: string, message: string): void => {
-    const timeStamp = new Date().toString()
+  static readonly verbose = (message: string, tag: string = ''): void => {
+    const timestamp = formatTimestamp(new Date())
     const { cyan, base, blackOnWhite } = colors
 
-    const logMessage = `${cyan}[ ${timeStamp} ] ${base}:: ${tag} :: ${blackOnWhite} V ${base} => ${message}\n`
-    console.log(logMessage)
+    if (tag === '') {
+      message = `${cyan}[ ${timestamp} ] ${blackOnWhite} V ${base} => ${message}\n`
+    } else {
+      message = `${cyan}[ ${timestamp} ] ${base}:: ${tag} :: ${blackOnWhite} V ${base} => ${message}\n`
+    }
+    console.log(message)
   }
 }
