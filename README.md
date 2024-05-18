@@ -5,15 +5,12 @@ This Logger package is a utility for logging messages in your application. It pr
 <p align="center">
   <img src="https://img.shields.io/npm/l/%40ashtrindade%2Flogger?labelColor=181717" alt="License" />
   <img src="https://img.shields.io/github/actions/workflow/status/ashtrindade/logger/coverage.yml?logo=jest&logoColor=C21325&label=tests&labelColor=181717" alt="Tests Status" />
-  <img src="https://img.shields.io/npm/dm/%40ashtrindade%2Flogger?logo=npm&labelColor=181717" alt="NPM Downloads" />
   <br>
   <img src="https://img.shields.io/npm/v/%40ashtrindade%2Flogger?label=version&logo=npm&labelColor=181717" alt="NPM Version" />
+  <img src="https://img.shields.io/npm/dm/%40ashtrindade%2Flogger?logo=npm&labelColor=181717&color=blue" alt="NPM Downloads" />
   <img alt="NPM Type Definitions" src="https://img.shields.io/npm/types/%40ashtrindade%2Flogger?logo=npm&labelColor=181717">
-  <br>
-  <img src="https://img.shields.io/bundlephobia/min/%40ashtrindade%2Flogger?logo=npm&label=bundle%20size&labelColor=181717" alt="npm bundle size" />
-  <img src="https://img.shields.io/npm/unpacked-size/%40ashtrindade%2Flogger?logo=npm&label=unpacked%20size&labelColor=181717" alt="NPM Unpacked Size" />
-
 </p>
+
 ## Usage
 
 To use the Logger package in your project, follow these steps:
