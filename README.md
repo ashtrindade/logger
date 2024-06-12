@@ -43,12 +43,3 @@ To use the Logger package in your project, follow these steps:
   Log.e(message: string, tag: string); // Error log
   Log.v(message: string, tag: string); // Verbose log
   ```
-
-## Example
-
-  ```ts
-  Log.d('This is a debug message', 'MyTag');
-  // Output: [ YYYY-MM-DD HH:mm:ss GMT<offset> :: MyTag ::  D  => This is a debug message
-  ```
-
-![Examples of logs with the format above](https://i.imgur.com/xYkkhBj.png)
